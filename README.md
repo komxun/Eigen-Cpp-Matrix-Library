@@ -10,4 +10,5 @@ My note from
 - Just include the header source files
 ```cpp
 #include <C:\Users\Komsun\Documents\For Coding\Eigen Library\eigen-3.4.0\Eigen\Dense>
+using namepsace Eigen;  // Or you have to use Eigen:: 
 ```
