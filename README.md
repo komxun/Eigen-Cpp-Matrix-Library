@@ -12,8 +12,8 @@ Table of contents
 <!--ts-->
   * [Installation](#installation)
   * [Defining Matrix](#defining-matrix)
-      * [Static Matrix](#static-matrix)
-      * [Dynamic Matrix](#dynamic-matrix)
+      * [Defining a Static Matrix](#static-matrix)
+      * [Defining a Dynamic Matrix](#dynamic-matrix)
   * [Special Matrices](#special-matrices)
       * [Zeros Matrix](#zeros-matrix)
       * [Ones Matrix](#ones-matrix)
