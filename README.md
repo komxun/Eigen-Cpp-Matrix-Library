@@ -6,6 +6,17 @@ My note from
 
 [Eigen Matrix Library](http://eigen.tuxfamily.org/index.php?title=Main_Page) is a powerful c++ library to perform matrix computation and linear algebra operation
 
+Table of contents
+=================
+
+<!--ts-->
+  * [Pointer](#what-is-a-pointer)
+      * [Storing a Variable's address in a pointer](#storing-a-variables-address-in-a-pointer)
+      * [Pointers VS Address VS Variables](#pointers-vs-address-vs-variables)
+  * [Free Store (Heap)](#free-store-heap)
+
+<!--te-->
+
 # Installation
 - Just include the header source files
 ```cpp
@@ -100,5 +111,36 @@ Eigen::MatrixXd colThree = A.col(2); // Column 3 of A
 ```
 
 # Basic Matrix Operations
+```cpp
+Eigen::MatrixXd A1(2,2), B1(2,2);
+A1 << 1, 2,
+      3, 4;
+B1 << 3, 4,
+      5, 6;
+```
+```cpp
+// Summation
+Eigen::MatrixXd C1 = A1 + B1;
 
+// Matrix multiplication
+Eigen::MatrixXd D1 = A1 * B1;
+
+// Multiplication by scalar
+Eigen::MatrixXd E1 = 2 * A1;
+
+// Matrix transpose
+Eigen::MatrixXd At = A1.transpose();
+
+// Matrix inverse
+Eigen::MatrixXd Ainv = A1.inverse();
+```
+## `transposeInPlace()`
+Be careful! the operation `.transpose()` might lead to unexpected results when self-assigned
+```cpp
+A1 = A1.transpose(); // Might lead to Error!!!
+```
+The correct and safe way to self-assign the transposed matrix is to use `.transposeInPlace()`
+```cpp
+A1.transposeInPlace(); // self-assigned the transposed value
+```
 
