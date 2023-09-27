@@ -6,6 +6,8 @@ My note from
 
 [Eigen Matrix Library](http://eigen.tuxfamily.org/index.php?title=Main_Page) is a powerful c++ library to perform matrix computation and linear algebra operation
 
+> Summarized by Komsun Tamanakijprasart
+
 Table of contents
 =================
 
