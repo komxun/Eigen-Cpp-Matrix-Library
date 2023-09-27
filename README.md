@@ -39,6 +39,7 @@ using namepsace Eigen;  // Or you have to use Eigen::
 
 # Defining Matrix
 ## Static Matrix
+- For a matrix with known fixed dimensions
 Method 1: Explicit declaration
 ```cpp
 Eigen::Matrix <float, 3, 3> matrixA1;
@@ -49,6 +50,7 @@ Eigen::Matrix3f matrixB1;
 Eigen::Matrix3d matrixB2;
 ```
 ## Dynamic Matrix
+- For a matrix with unknown dimension
 ```cpp
 Eigen::Matrix <float, Dynamic, Dynamic> matrixD1;  // Explicit declaration
 Eigen::MatrixXf matrixD2;                          // typedef declaration (X:unknown size, f:float)
