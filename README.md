@@ -10,10 +10,21 @@ Table of contents
 =================
 
 <!--ts-->
-  * [Pointer](#what-is-a-pointer)
-      * [Storing a Variable's address in a pointer](#storing-a-variables-address-in-a-pointer)
-      * [Pointers VS Address VS Variables](#pointers-vs-address-vs-variables)
-  * [Free Store (Heap)](#free-store-heap)
+  * [Installation](#installation)
+  * [Defining Matrix](#defining-matrix)
+      * [Static Matrix](#static-matrix)
+      * [Dynamic Matrix](#dynamic-matrix)
+  * [Special Matrices](#special-matrices)
+      * [Zeros Matrix](#zeros-matrix)
+      * [Ones Matrix](#ones-matrix)
+      * [Identity Matrix](#identity-matrix)
+      * [Matrix of Constant](#matrix-of-constant)
+  * [Assigning Values to Matrix](#assigning-values-to-matrix)
+  * [Accessing Values from Matrix](#accessing-values-from-matrix)
+      * [Accessing Matrix Blocks](#accessing-matrix-blocks) 
+      * [Accessing rows and columns of a matrix](#accessing-rows-and-columns-of-a-matrix)
+  * [Basic Matrix Operations](#basic-matrix-operations)
+      * [`transposeInPlace()`](#transposeinplace)  
 
 <!--te-->
 
