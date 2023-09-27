@@ -54,7 +54,7 @@ Eigen::Matrix3d matrixB2;
 ```cpp
 Eigen::Matrix <float, Dynamic, Dynamic> matrixD1;  // Explicit declaration
 Eigen::MatrixXf matrixD2;                          // typedef declaration (X:unknown size, f:float)
-Eigen::MatrixXd matrixD3(10,10);                   // constructor, allocate memory but don't initialize (d:double)
+Eigen::MatrixXd matrixD3(10,10);                   // constructor, allocate memory (for a 10x10 matrix) but not initialize (d:double)
 ```
 
 
